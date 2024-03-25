@@ -1,9 +1,10 @@
 body {
-	margin: 0;
-	height: 100%;
-	overflow: hidden;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	line-height: 1.5;
+    background-color: #008080;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
 }
 
 footer {
@@ -40,4 +41,23 @@ p {
 	font-size: 30px;
 	position: relative;
 	bottom: 2px;
+}
+
+
+/* win 98 window theme*/
+
+.windowActive > .win98Bar {
+    background: linear-gradient(to right, #010081, #00ace8);
+}
+
+.win98Bar {
+    background-color: #c3c3c3;
+}
+
+[id^="closeButton"] {
+	color: white;
+	cursor: pointer;
+	position: relative;
+	bottom: 9px;
+	font-size: 24px;
 }

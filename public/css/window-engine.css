@@ -16,7 +16,6 @@
 [id$="header"] {
 	padding: 10px;
 	z-index: 10;
-	background-color: black;
 	color: #fff;
 	border-radius: 4px 4px 0 0;
 	height: 40px;
@@ -36,14 +35,6 @@
 
 .mainWindow {
 	padding: 20px;
-}
-
-[id^="closeButton"] {
-	color: white;
-	cursor: pointer;
-	position: relative;
-	bottom: 9px;
-	font-size: 24px;
 }
 
 .windowGroup {
