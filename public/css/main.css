@@ -75,6 +75,7 @@ footer {
 	margin: 1%;
 	gap: 1vh;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .testBox {
