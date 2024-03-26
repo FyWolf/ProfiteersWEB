@@ -2,9 +2,10 @@ body {
     background-color: #008080;
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.5;
+	font-size: 2em;
 }
 
 footer {
@@ -18,15 +19,13 @@ footer {
 }
 
 header {
-	position: fixed;
-	top: 0;
 	background-color: rebeccapurple;
 	width: 100%;
-	height: 20px;
-	opacity: 0.5;
+	height: 20%;
+	/* opacity: 0.5; */
 	padding: 4px;
 	color: white;
-	font-size: 12px;
+	font-size: 2em;
 }
 
 p {
@@ -60,4 +59,36 @@ p {
 	position: relative;
 	bottom: 9px;
 	font-size: 24px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 5vh;
+}
+
+
+.testBody {
+	display: flex;
+	margin: 1%;
+	gap: 1vh;
+	align-items: flex-start;
+}
+
+.testBox {
+	width: 20vw;
+	background-color: #010081;
+}
+
+.box1 {
+	overflow-x: scroll;
+	text-wrap: nowrap;
+	height: auto;
+}
+
+.box2 {
+	overflow-y: scroll;
+	height: 20vh;
 }
