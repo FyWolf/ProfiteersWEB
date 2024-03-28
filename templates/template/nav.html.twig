@@ -1,5 +1,8 @@
 <header class="navHeader">
-<h1 class="title"><i>KAYLA FOX</i></h1>
+    <div>
+        {% include "/template/mediaPlayer.html.twig" %}
+    </div>
+    <h1 class="title"><i>KAYLA FOX</i></h1>
     <img src="{{asset("/ressources/pictures/fywolf_wo8bg.png")}}"/>
 </header>
 <nav>
@@ -9,3 +12,7 @@
     <a href="#">About me</a>
     <a href="#">Comissions</a>
 </nav>
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/mediaPlayer.css') }}">
+{% endblock %}

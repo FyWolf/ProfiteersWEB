@@ -4,11 +4,10 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="shortcut icon" href="{{ asset('ressources/favicon.ico') }}" type="image/x-icon" />
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
-    <script src="{{ asset("/js/window-engine.js") }}" defer></script>
-    <link rel="stylesheet" href="{{ asset("/css/window-engine.css") }}">
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
