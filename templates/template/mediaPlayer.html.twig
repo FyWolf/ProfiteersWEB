@@ -1,9 +1,10 @@
 <div class="winMediaPlayer9Base">
     <img src="{{asset("/ressources/pictures/mediaPlayer/base.png")}}" draggable="false" (dragstart)="false;"/>
-    <marquee class="MPSongTitle">This is the song title that is relatively looong</marquee>
+    <marquee class="MPSongTitle" id="MPSongTitle">This is the song title that is relatively looong</marquee>
     <img src="{{asset("/ressources/pictures/mediaPlayer/shutter-trans.gif")}}" class="MPShutter"/>
-    <button class="MPPlayBtn">
+    <button class="MPPlayBtn" id="MPPlayBtn">
         <img src="{{asset("/ressources/pictures/mediaPlayer/playbuttonhover2.gif")}}" class="MPPlay hover"/>
         <img src="{{asset("/ressources/pictures/mediaPlayer/playbutton2.gif")}}" class="MPPlay base"/>
     </button>
+    <audio id="audio-player" src="{{asset("/ressources/musics/JAMIEvx-Korrent_City_Streets.mp3")}}" autoplay></audio>
 </div>
