@@ -1,3 +1,8 @@
+
+:root {
+    font-size: 15px;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -5,80 +10,186 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.5;
 	font-size: 2em;
-	background-color: black;
+    background: #222222;
 	color: white;
 }
 
-/* Nav CSS */
 
-.navHeader {
-	height: auto;
-	display: flex;
-}
-
-.navTopHeader {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 100%;
-	z-index: 4;
-}
-
-
-.kaylaArt {
-	width: 100%;
-	margin-top: 5vh;
-	margin: auto;
-	z-index: 3;
-}
+/* NAV CSS */
 
 nav {
-	position: sticky;
-	top: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 2px;
-	background-image: linear-gradient(to right, #ffaecb, #ffce4d);
-	z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-nav::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: linear-gradient(to bottom, rgb(198 198 198) 1%, transparent 2px);
-	background-size: 100% 6px; /* Adjust size of scan lines as needed */
-	z-index: 5;
+nav > img {
+    height: 5vh;
 }
 
-nav > a {
-	text-decoration: none;
-	color: black;
-	width: 10vw;
-	z-index: 6;
-	border: 1px black solid;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-top-left-radius: 1vw;
-	border-top-right-radius: 1vw;
+nav > div {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.navHeader > .title {
-	position: absolute;
-	top: 0;
-	right: 20vw;
+nav > div > a {
+    color: #fcb00d;
+    text-decoration: none;
 }
 
-.navMediaPlayer {
-	position: absolute;
-	top: 12vh;
-	left: 0;
-	z-index: 5;
+nav > div > a:hover {
+    color: azure;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+
+/* EVENT PAGE CSS */
+
+.eventPage {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* EVENT TILE CSS */
+
+.eventTile {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 30vh;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.eventTile .tileBanner {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.eventTile .tileContent {
+    padding: 1vh;
+    padding-top: 0;
+}
+
+.eventTile .tileContent > h2 {
+    margin: 0;
+    color: #fcb00d;
+}
+
+.eventTile > .tileContent > p {
+    margin: 0;
+}
+
+.eventTile > .tileContent > .eventTime {
+    font-size: 1rem;
+}
+
+.eventTile > .tileContent > .eventDescription {
+    font-size: 1.5rem;
+}
+
+.eventTile > .tileContent > .tileControls {
+    margin: -1vh;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.eventTile > .tileContent > .tileControls a {
+    width: 100%;
+    background: none;
+    color: #fcb00d;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: 1px solid white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.eventTile > .tileContent > .tileControls > a:hover {
+    background-color: #fcb00d;
+    color: #222222;
+}
+
+.userAttendance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.userAttendance img {
+    height: 2vh;
+}
+
+.userAttendance > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.userAttendance > div > p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+/* EVENT VIEWER CSS*/
+
+.eventView > .topPart {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vh;
+}
+
+/* MODPACK CHECKER CSS */
+
+.modCheckerPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fcb00d;
+    font-size: 1.4rem;
+}
+
+.modCheckerPage .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modCheckerPage button {
+    background: none;
+    border: 3px solid #fcb00d;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: #fcb00d;
+    font-family: Inter;
+}
+
+.modCheckerPage #result {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 1.1rem;
 }

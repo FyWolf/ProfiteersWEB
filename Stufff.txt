@@ -1,0 +1,24 @@
+Fonctionalitées:
+    Gestion d'event:
+        CC peut créer des event
+        les utilisateurs peuvent rejoindre/refuser/hésiter
+        le contenu se résume en:
+            titre
+            date/heure
+            desctiprion
+            images
+            ORBAT
+        lors qu'un event est crée, un webhook est utilisé pour ping les joueurs en créant un nouveau post de forum avec un embed avec des détails
+    ORBAT (order of battle):
+        chaques event peuvent avoir un orbat avec les postes disponibles
+        les CC peuvent ajouter des slots et accepter les demandes
+        les utilisateurs qui participent à l'event concerné peuvent demander l'accès
+        un ping est envoyé à l'organisateur de l'event lors de la demande d'accès
+    Training tracker:
+        chaque utilisateurs vont être listé avec leurs différentes formation
+        les admins peuvent créer des catégories de Training
+        les 
+
+
+calendar that shows upcoming event
+users can have a list of prefered roles for ORBAT

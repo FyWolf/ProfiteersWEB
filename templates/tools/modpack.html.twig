@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profiteers Modpack Checker{% endblock %}
+{% block javascripts %}<script src="{{ asset('js/compare.js') }}"></script>{% endblock %}
+{% block body %}
+    <div class="modCheckerPage">
+        <h1>Modpack checker</h1>
+        <p>Ever wanted to fix Ashley's lazyness in making changelogs ? well, simple, input the source and the changed version, you have an the removed and added mods !</p>
+        <div class="form">
+            <p>Source modpack:</p>
+            <input type="file" id="file1" accept=".html">
+            <p>Changed modpack:</p>
+            <input type="file" id="file2" accept=".html">
+            <button onclick="compareTables()">Compare Modpacks</button>
+        </div>
+        <div id="result"></div>
+    </div>
+{% endblock %}

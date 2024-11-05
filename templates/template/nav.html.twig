@@ -1,23 +1,19 @@
-<header class="navHeader">
-    <div class="navMediaPlayer">
-        {% include "/template/mediaPlayer.html.twig" %}
-    </div>
-    <img class="kaylaArt" src="{{asset("/ressources/pictures/navBanner.png")}}"/>
-</header>
 <nav>
-    <a href="#">Shop</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Animations</a>
-    <a href="#">About me</a>
-    <a href="#">Comissions</a>
+    <img class="logo" src="/ressources/images/logo.png"/>
+    <div>
+        <a href="/">Home</a>
+        <a href="/events">Events</a>
+        <a href="#" class="disabled">Training</a>
+        <a href="#" class="disabled">Who are we ?</a>
+        <a href="#" class="disabled">Join us !</a>
+        <a href="/tools">Tools</a>
+        <a href="#" class="disabled">Account</a>
+    </div>
 </nav>
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('css/mediaPlayer.css') }}">
 {% endblock %}
 
 
 {% block javascripts %}
-    <script src="{{ asset('js/mediaPlayer.js') }}" defer></script>
-    <script src="{{ asset('js/jsmediatags.min.js') }}"></script>
 {% endblock %}

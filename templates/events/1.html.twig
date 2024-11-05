@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Events{% endblock %}
+
+{% block body %}
+<div class="eventView">
+    <div class="topPart">
+        <div>
+            <img class="eventBanner" src="/ressources/images/eventBanners/bannerTest.jpg"/>
+            <h2>Event Title</h2>
+            <p class="eventTime">2024/07/30 18:00</p>
+            <div class="userAttendance">
+                <div>
+                    <img src="/ressources/svg/person.svg"/>
+                    <p>27</p>
+                </div>
+                <div>
+                    <img src="/ressources/svg/personX.svg"/>
+                    <p>8</p>
+                </div>
+                <div>
+                    <img src="/ressources/svg/questionMark.svg"/>
+                    <p>13</p>
+                </div>
+            </div>
+            <div>
+                <button>Joining</button>
+                <button>Not joining</button>
+                <button>Tentative</button>
+                <button>Orbat</button>
+                <button>Manage</button>
+            </div>
+        </div>
+        <p> this is the description of the event.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas massa, quis posuere elit. Curabitur vulputate consectetur nisl, eget elementum sem ullamcorper sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas massa, quis posuere elit. Curabitur vulputate consectetur nisl, eget elementum sem ullamcorper sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas massa, quis posuere elit. Curabitur vulputate consectetur nisl, eget elementum sem ullamcorper sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas massa, quis posuere elit. Curabitur vulputate consectetur nisl, eget elementum sem ullamcorper sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas massa, quis posuere elit. Curabitur vulputate consectetur nisl, eget elementum sem ullamcorper sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas massa, quis posuere elit. Curabitur vulputate consectetur nisl, eget elementum sem ullamcorper sed.</p>
+    </div>
+    <p>and down here will be the orbat viewer but heh, I still have to figure that out (it will display a preview of the orbat and current approved slot, there will be a separate page that will allow to place wishes)</p>
+</div>
+{% endblock %}
